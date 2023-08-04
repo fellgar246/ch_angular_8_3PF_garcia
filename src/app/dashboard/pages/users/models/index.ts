@@ -3,9 +3,9 @@ export interface User {
   name: String;
   lastName: String;
   age: Number;
-  email: String;
+  email: string;
   course: String;
-  password: String;
+  password: string;
   token: string;
 }
 
@@ -13,16 +13,16 @@ export interface CreateUserData {
   name: String;
   lastName: String;
   age: Number;
-  email: String;
+  email: string;
   course: String;
-  password: String;
+  password: string;
 }
 
 export interface UpdateUserData {
   name?: String;
   lastName?: String;
   age?: Number;
-  email?: String;
+  email?: string;
   course?: String;
-  password?: String;
+  password?: string;
 }

@@ -11,7 +11,7 @@ import { environment } from 'src/environments/environment';
 export class CourseService {
 
   private _course$ = new BehaviorSubject<Course[]>([]);
-  private course$ = this._course$.asObservable();
+  public course$ = this._course$.asObservable();
 
   private _isLoading$ = new BehaviorSubject(false);
   public isLoading$ = this._isLoading$.asObservable();
